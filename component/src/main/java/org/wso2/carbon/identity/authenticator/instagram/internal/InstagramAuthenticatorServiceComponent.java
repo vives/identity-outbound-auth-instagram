@@ -34,8 +34,12 @@ public class InstagramAuthenticatorServiceComponent {
 
     private static Log log = LogFactory.getLog(InstagramAuthenticatorServiceComponent.class);
 
+	/**
+     * This method is to register the Insagram authenticator service.
+     *
+     * @param ctxt the Component Context
+     */
     protected void activate(ComponentContext ctxt) {
-        try {
             InstagramAuthenticator authenticator = new InstagramAuthenticator();
             Hashtable<String, String> props = new Hashtable<String, String>();
             ctxt.getBundleContext().registerService(ApplicationAuthenticator.class.getName(),
@@ -43,11 +47,13 @@ public class InstagramAuthenticatorServiceComponent {
             if (log.isDebugEnabled()) {
                 log.debug("Instagram authenticator is activated");
             }
-        } catch (Throwable e) {
-            log.fatal("Error while activating the Instagram authenticator ", e);
-        }
     }
 
+    /**
+     * This method is to deactivate the Instagram authenticator the service.
+     *
+     * @param ctxt the Component Context
+     */
     protected void deactivate(ComponentContext ctxt) {
         if (log.isDebugEnabled()) {
             log.debug("Instagram authenticator is deactivated");

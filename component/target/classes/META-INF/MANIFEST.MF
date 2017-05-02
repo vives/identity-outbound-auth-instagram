@@ -1,0 +1,59 @@
+Manifest-Version: 1.0
+Export-Package: org.wso2.carbon.identity.authenticator.instagram.inter
+ nal;uses:="org.apache.commons.logging,org.wso2.carbon.identity.applic
+ ation.authentication.framework,org.osgi.framework,org.wso2.carbon.ide
+ ntity.authenticator.instagram,org.osgi.service.component";version="1.
+ 0.2.SNAPSHOT",org.wso2.carbon.identity.authenticator.instagram;uses:=
+ "org.wso2.carbon.identity.core.util,org.apache.commons.logging,org.ap
+ ache.oltu.oauth2.client.request,org.wso2.carbon.identity.application.
+ authentication.framework,org.apache.oltu.oauth2.client,org.wso2.carbo
+ n.identity.application.authentication.framework.config.model,org.json
+ ,org.wso2.carbon.identity.application.authentication.framework.util,o
+ rg.apache.oltu.oauth2.client.response,org.wso2.carbon.identity.applic
+ ation.authentication.framework.model,org.apache.commons.lang,org.apac
+ he.oltu.oauth2.common.exception,org.wso2.carbon.identity.application.
+ common.model,org.apache.oltu.oauth2.common.message.types,org.wso2.car
+ bon.identity.application.authenticator.oidc,org.wso2.carbon.identity.
+ application.authentication.framework.context,org.wso2.carbon.identity
+ .application.authentication.framework.exception,javax.servlet.http";v
+ ersion="1.0.2.SNAPSHOT"
+Service-Component: OSGI-INF/serviceComponents.xml
+Built-By: vive
+Tool: Bnd-1.43.0
+Bundle-Name: org.wso2.carbon.extension.identity.authenticator.instagra
+ m.connector
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: WSO2
+Build-Jdk: 1.7.0_79
+Bundle-Version: 1.0.2.SNAPSHOT
+Bnd-LastModified: 1493373843552
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-Description: WSO2 is an open source application development sof
+ tware company focused on providing service-oriented        architectu
+ re solutions for professional developers.
+Bundle-SymbolicName: org.wso2.carbon.extension.identity.authenticator.
+ instagram.connector
+Import-Package: javax.servlet;version="[2.6,3)",javax.servlet.http;ver
+ sion="[2.6,3)",org.apache.commons.lang;resolution:=optional;version="
+ [2.6,3)",org.apache.commons.logging;version="1.0.4",org.apache.oltu.o
+ auth2.client;version="[1.0.0,2.0.0)",org.apache.oltu.oauth2.client.re
+ quest;version="[1.0.0,2.0.0)",org.apache.oltu.oauth2.client.response;
+ version="[1.0.0,2.0.0)",org.apache.oltu.oauth2.common.exception;versi
+ on="[1.0.0,2.0.0)",org.apache.oltu.oauth2.common.message.types;versio
+ n="[1.0.0,2.0.0)",org.json;resolution:=optional;version="[3.0,4)",org
+ .osgi.framework;version="[1.7,2)",org.osgi.service.component;resoluti
+ on:=optional;version="[1.2,2)",org.wso2.carbon.identity.application.a
+ uthentication.framework;version="[5.0,6)",org.wso2.carbon.identity.ap
+ plication.authentication.framework.config.model;version="[5.0,6)",org
+ .wso2.carbon.identity.application.authentication.framework.context;ve
+ rsion="[5.0,6)",org.wso2.carbon.identity.application.authentication.f
+ ramework.exception;version="[5.0,6)",org.wso2.carbon.identity.applica
+ tion.authentication.framework.model;version="[5.0,6)",org.wso2.carbon
+ .identity.application.authentication.framework.util;version="[5.0,6)"
+ ,org.wso2.carbon.identity.application.authenticator.oidc;resolution:=
+ optional;version="[5.0,6)",org.wso2.carbon.identity.application.commo
+ n.model;resolution:=optional;version="[5.0,6)",org.wso2.carbon.identi
+ ty.core.util;resolution:=optional;version="[5.0,6)"
+Bundle-DocURL: http://www.wso2.org/
+
